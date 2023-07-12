@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Verduzco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Header -->
+   <header>
+      <h1>My Website</h1>
+   </header>
+   
+   <!-- Navigation -->
+   <nav>
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="#">Contact</a></li>
+      </ul>
+   </nav>
+   
+   <!-- Main Content -->
+   <main>
+      <!-- About Me Section -->
+      <section>
+         <h2>About Me</h2>
+         <p>Hello, I'm Sergio Verduzco. I enjoy coding and creating websites.</p>
+      </section>
+    <!-- Add your form elements here -->
+    <form id="myForm">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <fieldset>
+         <legend>Personal Information</legend>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+         <br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+         <br>
+         <label for="phone">Phone:</label>
+         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+         <br>
+         <label for="dob">Date of Birth:</label>
+         <input type="date" id="dob" name="dob" required>
+         <br>
+         <label for="bio">Bio:</label>
+         <textarea id="bio" name="bio" rows="4" required></textarea>
+      </fieldset>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+        <br>
+        <label for="fruit">Favorite Fruit:</label>
+        <select id="fruit" name="fruit">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="orange">Orange</option>
+        </select>
+        <br>
+        <label for="subscribe">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <br>
+        <label for="rating">Rate this Website:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" list="countryList" required>
+        <datalist id="countryList">
+          <option value="USA">
+          <option value="Canada">
+          <option value="UK">
+          <option value="Australia">
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+         <legend>Additional Information</legend>
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username" minlength="6" required>
+         <br>
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" minlength="8" required>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <button type="button" onclick="cancelForm()">Cancel</button>
+    </form>
+  </main>
+   
+   <!-- Footer -->
+   <footer>
+      <p>&copy; 2023 Sergio Verduzco. All rights reserved.</p>
+   </footer>
+   <script src="script.js"></script>
+   
+   <!-- Inline Image -->
+   <img src="image.jpg" alt="My Image" width="200" height="150">
+
+</body>
+</html>
